@@ -1,0 +1,66 @@
+body{
+    background-color: black;
+    font-family: 'Nunito', sans-serif;
+    width: 70%;
+    margin: auto;
+}
+
+/* Quote Container */
+
+h1{
+    color: white;
+    text-align: center;
+    margin-top: 64px;
+}
+
+#quote{
+    color: aquamarine;
+    font-size: 2rem;
+    text-align: center;
+    border: 5px solid slateblue;
+    padding: 1.5em;
+    border-radius: 5px;
+}
+
+#buttonContainer{
+    width: fit-content;
+    margin: auto;
+}
+
+#quoteButton{
+    padding: 10px;
+    font-size: 16px;
+    background: white;
+    border: 5px solid;
+    border-radius: 5px;
+    color: #141c3a;
+    cursor: pointer;
+}
+
+/* App Description */
+
+.about {
+    margin-top: 5rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    color: aliceblue;
+    text-align: center;
+}
+
+.about p {
+    font-size: 1.25rem;
+}
+
+.about li {
+    text-align: left;
+    font-size: 1.25rem;
+    list-style-type: circle;
+}
+
+/* Footer */
+
+.footer {
+    color: slateblue;
+    font-size: 1rem;
+    text-align: center;
+}
