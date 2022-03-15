@@ -21,7 +21,7 @@ const quotesDb = ["Take pain and make it something good. - Pete Holmes",
 ]
 
 let workingQuotes = Array.from(quotesDb); //fill array from quotesDb
-console.log(workingQuotes);
+
 
 
 let button = document.getElementById('quoteButton');
@@ -35,7 +35,7 @@ function quoteSelector() {
         workingQuotes = Array.from(quotesDb);
     };
     // if workingQuotes is empty, refill array
-    console.log(workingQuotes);
+    
     return q; // return quote to display
 }
 
