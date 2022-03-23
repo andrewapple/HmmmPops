@@ -22,6 +22,12 @@ h1{
     border-radius: 5px;
 }
 
+/* 
+.sizetest {
+    border: 5px solid slateblue;
+}
+*/
+
 #buttonContainer{
     width: fit-content;
     margin: auto;
@@ -31,7 +37,7 @@ h1{
     padding: 10px;
     font-size: 16px;
     background: white;
-    border: 5px solid;
+    border: 5px solid slategray;
     border-radius: 5px;
     color: #141c3a;
     cursor: pointer;

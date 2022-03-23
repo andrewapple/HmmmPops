@@ -22,10 +22,9 @@ const quotesDb = ["Take pain and make it something good. - Pete Holmes",
 
 let workingQuotes = Array.from(quotesDb); //fill array from quotesDb
 
-
-
 let button = document.getElementById('quoteButton');
 let quote = document.getElementById('quote');
+let style = document.getElementById('styletest');
 
 function quoteSelector() {
     let randomQuoteIndex = Math.floor(Math.random() * workingQuotes.length);
@@ -37,14 +36,47 @@ function quoteSelector() {
     // if workingQuotes is empty, refill array
     
     return q; // return quote to display
+    
+}
+
+/* CHANGES FONT COLOR OF THE QUOTE WHEN THE QUOTE CHANGES */
+function newStyle() {
+  let newColor = '';
+  let x = Math.floor(Math.random()*7); 
+  switch (x){
+    case 0:
+      newColor = "rgb(241, 141, 158)";
+      break;
+    case 1: 
+      newColor = "rgb(91, 200, 172)";
+      break;
+    case 2:
+      newColor = "rgb(230, 215, 42)";
+      break; 
+    case 3:
+      newColor= "rgb(150, 0, 255)";
+      break
+    case 4:
+      newColor = "rgb(1, 255, 244)";
+      break;
+    case 5:
+        newColor = "rgb(255, 242, 5)";
+      break;
+    case 6: 
+        newColor = "rgb(255, 17, 120)";
+      break;
+  }
+  
+  var elem = document.getElementById('quote');
+  elem.style.color = newColor; 
 }
 
 function showQuote(){
   quote.innerHTML = quoteSelector();
+  style.innerHTML = newStyle();
   button.innerHTML = "MORE";
   button.style.cursor = "default";
 
 }
 
 button.addEventListener('click', showQuote);
-
