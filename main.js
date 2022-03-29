@@ -42,28 +42,37 @@ function quoteSelector() {
 /* CHANGES FONT COLOR OF THE QUOTE WHEN THE QUOTE CHANGES */
 function newStyle() {
   let newColor = '';
-  let x = Math.floor(Math.random()*7); 
+  let x = Math.floor(Math.random()*10); 
   switch (x){
     case 0:
-      newColor = "rgb(241, 141, 158)";
+      newColor = "#F18D9E";
       break;
     case 1: 
-      newColor = "rgb(91, 200, 172)";
+      newColor = "#5BC8AC";
       break;
     case 2:
-      newColor = "rgb(230, 215, 42)";
+      newColor = "#459CFF";
       break; 
     case 3:
-      newColor= "rgb(150, 0, 255)";
+      newColor= "#C066FF";
       break
     case 4:
-      newColor = "rgb(1, 255, 244)";
+      newColor = "#01FFF4";
       break;
     case 5:
-        newColor = "rgb(255, 242, 5)";
+        newColor = "#FFF205";
       break;
     case 6: 
-        newColor = "rgb(255, 17, 120)";
+        newColor = "ff4595";
+      break;
+    case 7: 
+      newColor = "#FFA238";
+      break;
+    case 8: 
+      newColor = "##7a7ac4";
+      break;
+    case 9: 
+      newColor = "#D2691E";
       break;
   }
   
@@ -73,10 +82,8 @@ function newStyle() {
 
 function showQuote(){
   quote.innerHTML = quoteSelector();
-  style.innerHTML = newStyle();
   button.innerHTML = "MORE";
-  button.style.cursor = "default";
-
+  button.style.cursor = "pointer";
 }
 
 button.addEventListener('click', showQuote);
