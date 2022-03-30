@@ -17,9 +17,16 @@ h1{
     color: aquamarine;
     font-size: 2rem;
     text-align: center;
-    /*border: 5px solid yellow;*/
+    /*border: 5px solid yellow;
+    border-radius: 5px;*/
     padding: 1.5em;
-    border-radius: 5px;
+}
+
+@media screen and (max-width: 540px) {
+    #quote {
+        padding: 0;
+        font-size: 1rem;
+    }
 }
 
 #buttonContainer{
