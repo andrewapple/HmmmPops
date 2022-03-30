@@ -26,20 +26,49 @@ let button = document.getElementById('quoteButton');
 let quote = document.getElementById('quote');
 let style = document.getElementById('styletest');
 
-function quoteSelector() {
+function quoteSelector(c) {
     let randomQuoteIndex = Math.floor(Math.random() * workingQuotes.length);
     let q = workingQuotes[randomQuoteIndex]; // get quote to display
     workingQuotes.splice(randomQuoteIndex, 1); // remove quote from array
     if (workingQuotes.length === 0) {
         workingQuotes = Array.from(quotesDb);
-    };
-    // if workingQuotes is empty, refill array
-    
+    }; // if workingQuotes is empty, refill array
+
+    quote.style.color = c;
+
     return q; // return quote to display
-    
 }
 
-/* CHANGES FONT COLOR OF THE QUOTE WHEN THE QUOTE CHANGES */
+let colorsDb = ["aqua", "chartreuse", "cornflowerblue", "coral", "deeppink", "fuchsia", "yellow", "lightsalmon"]
+
+let workingColors = Array.from(colorsDb);
+
+function colorSelector() {
+  let rCI = Math.floor(Math.random() * workingColors.length);
+  let c = workingColors[rCI];
+  workingColors.splice(rCI, 1);
+  if (workingColors.length === 0) {
+    workingColors = Array.from(colorsDb);
+  };
+  
+  return c;
+}
+
+
+function showQuote(){
+  quote.innerHTML = quoteSelector(colorSelector());
+  button.innerHTML = "MORE";
+  button.style.cursor = "pointer";
+}
+
+button.addEventListener('click', showQuote);
+
+
+
+
+
+
+/* CHANGES FONT COLOR OF THE QUOTE WHEN THE QUOTE CHANGES 
 function newStyle() {
   let newColor = '';
   let x = Math.floor(Math.random()*10); 
@@ -69,7 +98,7 @@ function newStyle() {
       newColor = "#FFA238";
       break;
     case 8: 
-      newColor = "##7a7ac4";
+      newColor = "#7a7ac4";
       break;
     case 9: 
       newColor = "#D2691E";
@@ -78,12 +107,4 @@ function newStyle() {
   
   var elem = document.getElementById('quote');
   elem.style.color = newColor; 
-}
-
-function showQuote(){
-  quote.innerHTML = quoteSelector();
-  button.innerHTML = "MORE";
-  button.style.cursor = "pointer";
-}
-
-button.addEventListener('click', showQuote);
+} */

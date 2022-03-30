@@ -17,16 +17,10 @@ h1{
     color: aquamarine;
     font-size: 2rem;
     text-align: center;
-    border: 5px solid slateblue;
+    /*border: 5px solid yellow;*/
     padding: 1.5em;
     border-radius: 5px;
 }
-
-/* 
-.sizetest {
-    border: 5px solid slateblue;
-}
-*/
 
 #buttonContainer{
     width: fit-content;
