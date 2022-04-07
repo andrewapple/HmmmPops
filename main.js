@@ -17,7 +17,14 @@ const quotesDb = ["Take pain and make it something good. - Pete Holmes",
   "A few people will change your life forever. Find them. - Nic Haralambous",
   "Find a group of people who challenge and inspire you; spend alot of time with them, and it will change your life. - Amy Poehler",
   "Who you chill with affects your level of chill. - John Gorman",
-  "I have decided to stick with love, hate is too great a burden to bear. - Martin Luther King Jr."
+  "I have decided to stick with love, hate is too great a burden to bear. - Martin Luther King Jr.",
+  "I'm not good at asking for help. - Andrew Apple",
+  "Baseball isn't statistics, it's Joe DiMaggio rounding second base. - Jimmy Breslin",
+  "LeBron DiMaggio, now that's a name. - Andrew Apple",
+  "Perfectionism is death. - Adam McKay (on writing)",
+  "Follow your actual passion, and the work product will naturally be of a higher quality. -anon",
+  "Today didn't have to be this way / Tomorrow is another day / Another chance to make things right / A chance to make sense of last night - MxPx",
+  "The only thing that can save the world is the reclaiming of the awareness of the world. That's what poetry does. - Allen Ginsberg"
 ]
 
 let workingQuotes = Array.from(quotesDb); //fill array from quotesDb
@@ -39,7 +46,7 @@ function quoteSelector(c) {
     return q; // return quote to display
 }
 
-let colorsDb = ["aqua", "chartreuse", "cornflowerblue", "coral", "deeppink", "fuchsia", "yellow", "lightsalmon"]
+let colorsDb = ["aquamarine", "chartreuse", "cornflowerblue", "deeppink", "fuchsia", "yellow"]
 
 let workingColors = Array.from(colorsDb);
 
