@@ -24,7 +24,8 @@ const quotesDb = ["Take pain and make it something good. - Pete Holmes",
   "Perfectionism is death. - Adam McKay (on writing)",
   "Follow your actual passion, and the work product will naturally be of a higher quality. -anon",
   "Today didn't have to be this way / Tomorrow is another day / Another chance to make things right / A chance to make sense of last night - MxPx",
-  "The only thing that can save the world is the reclaiming of the awareness of the world. That's what poetry does. - Allen Ginsberg"
+  "The only thing that can save the world is the reclaiming of the awareness of the world. That's what poetry does. - Allen Ginsberg",
+  "The first draft is always awful...all of the magic happens in the third and fourth drafts. - Amy E. Reichert"
 ]
 
 let workingQuotes = Array.from(quotesDb); //fill array from quotesDb
